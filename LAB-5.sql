@@ -33,3 +33,5 @@ CREATE TABLE Boxes(
  SELECT DISTINCT ON(warehouse)code FROM Boxes;
     SELECT warehouse,value FROM Boxes ORDER BY contents;
 SELECT warehouse,value FROM Boxes WHERE contents='Papers';
+ INSERT INTO Warehouses(Code,Location,Capacity) VALUES(6,'New York',3);
+INSERT INTO Boxes(Code,Contents,Value,Warehouse) VALUES('H5RT','Papers',200,2);
